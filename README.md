@@ -13,7 +13,7 @@ O problema trata do funcionamento de uma creche onde temos dois tipos de atores,
 Para executar o código precisamos das bibliotecas unistd.h, stdlib.h, stdio.h, semaphore.h e pthread.h. Para compilar o código devemos inserir a flag -pthread. Depois disso, basta rodar o executável. Importante ressaltar que o código foi testado apenas em um sistema Linux, utilizando a linha de compilação gcc creche.c -o creche -pthread. É possível mudar a quantidade de pessoas mudando o valor de N_PESSOAS. Pode ocorrer do programa muitas vezes não conseguir rodar todas as threads. Isso é uma consequência natural do problema, já que algumas vezes crianças não conseguem entrar na creche devido a falta de adultos, seja por eles não existirem ou por já terem ido embora.
 
 ## Vídeo e slides
-[Vídeo explicando o problema](https://www.canva.com/design/DAFjlthgY3g/NpWy_x92G8xqztVDujTsSQ/view?utm_content=DAFjlthgY3g&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
+[Vídeo explicando o problema](https://drive.google.com/file/d/1_tCDtSC09f6I0GQRBAa34DB1MyUnMtWG/view?usp=sharing)
 
 [Slides utilizados no vídeo](https://www.canva.com/design/DAFjlthgY3g/taYSL7OXTLs0XMOf2-1RhA/edit?utm_content=DAFjlthgY3g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
