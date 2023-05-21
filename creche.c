@@ -52,7 +52,7 @@ void prt() {
 	}
 	printf("\n");
 	/* Imprime a cerca da creche */
-	printf("Creche\n");
+	printf("Creche:\n");
 	/* Calcula o tamanho do maior id e padroniza a impressão para id's menores */
 	int sz = 1;
 	int at = N_PESSOAS - 1;
@@ -142,7 +142,7 @@ void prt() {
 	}
 	printf("\n");
 	/* Impressão daqueles que já passaram pela creche e foram embora */
-	printf("Foi embora\n");
+	printf("Foi embora:\n");
 	for(int i = 0; i < N_PESSOAS; i++) {
 		if(status[i] == 3) {
 			if(tipo_pessoas[i] == 0) printf("A%d ", i);
@@ -151,6 +151,8 @@ void prt() {
 	}
 	printf("\n");
 	printf("\n\n");
+	/* Imprime possíveis prints que ficaram no buffer */
+	fflush(stdout);
 }
 
 /*Thread dos adultos*/
@@ -230,6 +232,7 @@ void* f_crianca(void *v) {
 		prt();
 		sem_post(&imprime);
 	}
+
 	sem_wait(&protect);
 
 	/* Saímos da creche */
@@ -247,8 +250,6 @@ void* f_crianca(void *v) {
 		sem_post(&fila_adulto);
 	}
 	sem_post(&protect);
-	/* Imprime possíveis prints que ficaram no buffer */
-	fflush(stdout);
 }
 
 int main() {
