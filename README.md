@@ -17,5 +17,11 @@ Para executar o código precisamos das bibliotecas unistd.h, stdlib.h, stdio.h, 
 
 [Slides utilizados no vídeo]()
 
+## Visualização
+
+Ao rodar o executável há a impressão do estado da aplicação em diversos instantes, mostrando as crianças na fila para entrar na creche, as pessoas dentro da creche e aqueles que entraram na creche e foram embora, conforme a imagem abaixo. Foi utilizada a impressão de caracteres ASCII para essa implementação.
+
+![Creche](creche.png)
+
 ## Referências 
 Allen B. Downey. The Little Book of Semaphores. Green Tea Press, 2008.
