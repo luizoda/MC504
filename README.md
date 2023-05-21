@@ -14,6 +14,7 @@ Para executar o código precisamos das bibliotecas unistd.h, stdlib.h, stdio.h, 
 
 ## Vídeo e slides
 [Vídeo explicando o problema]()
+
 [Slides utilizados no vídeo]()
 
 ## Referências 
